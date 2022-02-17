@@ -39,7 +39,7 @@ const handleSubmit2 = (e) => {
 const[IsModalOpen1,setIsModelOpen1] =useState(false)
 const[IsModalOpen2,setIsModelOpen2] =useState(false)
   return (
-      <div>
+      <div id='main'>
 
 <h1 className='text-blue-600 text-center p-8  text-2xl'>Welcome to Smart Electricity</h1>
 
@@ -84,7 +84,7 @@ const[IsModalOpen2,setIsModelOpen2] =useState(false)
             <img className="h-4 w-4" src={close} onClick={()=>{setIsModelOpen2(false)}}  alt="close"/>
             </div>
 
-            <h1 className=' text-center text-xl  font-semibold  text-blue-600'>Buy Token</h1>
+            <h1 className=' text-center text-xl  font-semibold  text-blue-600'>Check Days Left</h1>
            <input type="text"  value={MeterData.meterId}  onChange={(e) => setFormData({...MeterData.meterId, meterId: e.target.value})}className=' border  rounded  h-12 p-2  ' placeholder='Enter  meter Id' />
           
          
@@ -93,10 +93,10 @@ const[IsModalOpen2,setIsModelOpen2] =useState(false)
            
            <button className='bg-blue-600 text-white h-12 p-2  rounded' onClick={handleSubmit2}>Check</button>         
            
-           {/* <div className=' my-4 w-full p-4'>
-             <p>Current Token :<span className='text-blue-600 pl-2 text-lg font-bold'>{CurrentMeter.token}</span></p>
-             <p>Remaining Days:<span className='text-blue-600 pl-2 text-lg font-bold'>{CurrentMeter.days} Days</span></p>
-           </div> */}
+           <div className=' my-4 w-full p-4'>
+            
+             <p>Remaining Days:<span className='text-blue-600 pl-2 text-lg font-bold'>100 Days</span></p>
+           </div>
             </div>
         </Modal>
     </div>

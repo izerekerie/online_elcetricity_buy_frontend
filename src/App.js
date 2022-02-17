@@ -13,7 +13,7 @@ function App() {
      
               
                 <Routes>
-                    <Route exact path="/buytoken"  element={<BuyToken />}/>
+                   
                     <Route exact path="/"  element={<Home />}/>
                 </Routes>
            
